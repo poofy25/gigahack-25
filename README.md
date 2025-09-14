@@ -2,7 +2,7 @@
 
 ## Prezentare Generală
 
-CyberDoc este o platformă comprehensivă de conformitate cibernetică și evaluare vulnerabilități, concepută special pentru întreprinderile din Moldova pentru a se conforma cu **Legea 142/2023** (Legea Cibernetică). Platforma combină scanarea automată de securitate cu evaluarea inteligentă a conformității pentru a ajuta organizațiile să evite amenzi de până la **15.000 MDL** pentru neconformitate.
+CyberDoc este o platformă comprehensivă de conformitate cibernetică și evaluare vulnerabilități, concepută special pentru întreprinderile din Moldova pentru a se conforma cu **Legea 48/2023** (Legea Cibernetică). Platforma combină scanarea automată de securitate cu evaluarea inteligentă a conformității pentru a ajuta organizațiile să evite amenzi de până la **15.000 MDL** pentru neconformitate.
 
 Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițială prin scanarea vulnerabilităților până la îndrumări acționabile de remediere. Are o interfață modernă cu temă întunecată construită cu componente React și Tailwind CSS, cu baza de date PostgreSQL pentru persistența datelor folosind Drizzle ORM.
 
@@ -16,7 +16,7 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 - **Scanarea Vulnerabilităților Dependențelor**: Identificarea pachetelor învechite cu probleme de securitate cunoscute
 
 ### 📋 **Chestionar de Evaluare a Conformității**
-- **Chestionar Interactiv**: 100+ întrebări acoperind toate aspectele conformității cu Legea 142/2023
+- **Chestionar Interactiv**: 100+ întrebări acoperind toate aspectele conformității cu Legea 48/2023
 - **Rutare Bazată pe Risc**: Flux dinamic de întrebări bazat pe răspunsurile anterioare
 - **Evaluarea Riscurilor în Timp Real**: Identificarea imediată a problemelor critice, înalte, medii și scăzute
 - **Referințe la Articolele Legii**: Fiecare întrebare legată de cerințele legale specifice
@@ -40,7 +40,7 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 ## Călătoria Utilizatorului
 
 ### 1. **Evaluarea Inițială** (`/`)
-- Pagina de destinație explicând cerințele de conformitate cu Legea 142/2023
+- Pagina de destinație explicând cerințele de conformitate cu Legea 48/2023
 - Call-to-action clar pentru a începe procesul de auto-audit
 - Informații despre amenzi potențiale și beneficiile conformității
 
@@ -202,7 +202,7 @@ NEXTAUTH_URL=http://localhost:3000
 
 ## Funcționalități de Conformitate
 
-### Conformitatea cu Legea 142/2023
+### Conformitatea cu Legea 48/2023
 - **Articolul 4**: Cerințele de prezență online și identificarea sistemelor
 - **Articolul 5**: Obligațiile de măsuri de securitate și managementul riscurilor
 - **Articolul 7**: Cerințele pentru personalul desemnat de securitate cibernetică
