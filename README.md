@@ -86,15 +86,14 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 
 ### Arhitectura Backend
 - **Runtime**: Node.js cu configurare server personalizată folosind rutele API Next.js
-- **ORM Baza de Date**: Drizzle ORM pentru operațiuni type-safe cu baza de date și migrări
 - **Autentificare**: bcryptjs pentru hash-ul parolelor și autentificarea utilizatorilor
 - **Managementul Sesiunilor**: Sesiuni bazate pe PostgreSQL folosind connect-pg-simple
+- **Automatizare**: n8n workflow-uri pentru procesarea datelor și analiza AI
 
 ### Designul Bazei de Date
-- **Baza de Date**: PostgreSQL cu hosting serverless Neon
-- **Managementul Schemei**: Drizzle Kit pentru migrările bazei de date și managementul schemei
+- **Baza de Date**: PostgreSQL cu hosting Supabase
 - **Tabele**: Managementul utilizatorilor cu sistem de autentificare username/password
-- **Conexiunea**: Driver serverless Neon pentru conexiuni eficiente cu baza de date
+- **Conexiunea**: Driver Supabase pentru conexiuni eficiente cu baza de date
 
 ### Integrarea AI
 - **Workflow-uri n8n**: Raportarea automată a incidentelor și analiza securității
@@ -103,15 +102,15 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 - **Output Structurat**: Rezultate formatate JSON pentru integrare fără probleme
 
 ### Instrumente de Dezvoltare
-- **Sistemul de Build**: Vite pentru build-uri rapide de dezvoltare și hot module replacement
+- **Sistemul de Build**: Next.js built-in bundling pentru dezvoltare și producție
 - **Calitatea Codului**: TypeScript strict mode cu verificare comprehensivă a tipurilor
-- **Serverul de Dezvoltare**: Server personalizat similar cu Express cu integrarea Vite pentru dezvoltare
-- **Managementul Asset-urilor**: Gestionarea asset-urilor statice cu directorul attached_assets
+- **Serverul de Dezvoltare**: Next.js development server cu hot reload
+- **Managementul Asset-urilor**: Gestionarea asset-urilor statice cu directorul public
 
 ### Strategia de Deployment
-- **Build de Producție**: ESBuild pentru bundling server-side și Vite pentru optimizarea client-side
-- **Variabile de Mediu**: DATABASE_URL necesară pentru conexiunea PostgreSQL
-- **Pachete Externe**: Pachetul serverless Neon externalizat pentru execuția corectă server-side
+- **Build de Producție**: Next.js built-in bundling pentru optimizarea client-side și server-side
+- **Variabile de Mediu**: SUPABASE_URL și SUPABASE_ANON_KEY necesare pentru conexiunea bazei de date
+- **Hosting**: Deployment pe platforme compatibile cu Next.js (Vercel, Netlify, etc.)
 
 ## Componente Cheie
 
@@ -140,8 +139,8 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 ## Dependențe Externe
 
 ### Servicii de Bază de Date
-- **Neon Database**: Hosting serverless PostgreSQL cu connection pooling
-- **Drizzle ORM**: Toolkit type-safe pentru baza de date cu suport dialect PostgreSQL
+- **Supabase**: Platformă backend-as-a-service cu PostgreSQL și funcții serverless
+- **PostgreSQL**: Baza de date relațională cu suport complet pentru SQL
 
 ### UI și Sistem de Design
 - **Radix UI**: Primitive de componente accesibile pentru componente UI complexe
@@ -155,10 +154,10 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 - **Integrarea Webhook**: Procesarea datelor în timp real și comunicare
 
 ### Instrumente de Dezvoltare și Build
-- **Vite**: Instrument de build rapid cu plugin React pentru experiența de dezvoltare
-- **ESBuild**: Bundler JavaScript pentru build-uri de producție server
+- **Next.js**: Framework React cu built-in bundling și optimizări
 - **TypeScript**: Verificarea statică a tipurilor și experiența îmbunătățită de dezvoltare
-- **Integrarea Replit**: Plugin-uri Vite pentru suportul mediului de dezvoltare Replit
+- **ESLint**: Linting pentru calitatea codului și consistența
+- **PostCSS**: Procesarea CSS cu Tailwind CSS
 
 ### Autentificare și Securitate
 - **bcryptjs**: Biblioteca de hash pentru parole pentru autentificarea securizată a utilizatorilor
@@ -173,7 +172,7 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 
 ### Cerințe Preliminare
 - Node.js 18+ 
-- Baza de date PostgreSQL (sau cont Neon)
+- Cont Supabase pentru baza de date PostgreSQL
 - npm sau yarn package manager
 
 ### Instalare
@@ -187,10 +186,7 @@ npm install
 
 # Configurează variabilele de mediu
 cp .env.example .env.local
-# Editează .env.local cu URL-ul bazei de date și alte configurații
-
-# Rulează migrările bazei de date
-npm run db:migrate
+# Editează .env.local cu credențialele Supabase și alte configurații
 
 # Pornește serverul de dezvoltare
 npm run dev
@@ -198,7 +194,8 @@ npm run dev
 
 ### Variabile de Mediu
 ```env
-DATABASE_URL=postgresql://username:password@host:port/database
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
 NEXTAUTH_SECRET=your-secret-key
 NEXTAUTH_URL=http://localhost:3000
 ```
