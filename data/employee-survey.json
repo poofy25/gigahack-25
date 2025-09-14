@@ -1,0 +1,275 @@
+{
+  "survey": [
+    {
+      "id": 1,
+      "question": "Cât de des schimbați parola pentru conturile de lucru?",
+      "law_article": "Art. 15 - Măsuri de securitate",
+      "type": "single_choice",
+      "answers": {
+        "Lunar": {
+          "next": 2,
+          "risk": "Scăzut"
+        },
+        "La fiecare 3 luni": {
+          "next": 2,
+          "risk": "Scăzut"
+        },
+        "La fiecare 6 luni": {
+          "next": 2,
+          "risk": "Mediu"
+        },
+        "Anual sau mai rar": {
+          "next": 2,
+          "risk": "Înalt"
+        },
+        "Nu știu": {
+          "next": 2,
+          "risk": "Înalt"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "question": "Cum gestionați parola pentru conturile de lucru?",
+      "law_article": "Art. 15 - Măsuri de securitate",
+      "type": "single_choice",
+      "answers": {
+        "Folosesc un manager de parole": {
+          "next": 3,
+          "risk": "Scăzut"
+        },
+        "Le notez într-un caiet securizat": {
+          "next": 3,
+          "risk": "Mediu"
+        },
+        "Le memorez": {
+          "next": 3,
+          "risk": "Mediu"
+        },
+        "Le notez pe hârtie sau în fișiere": {
+          "next": 3,
+          "risk": "Înalt"
+        },
+        "Le împărtășesc cu colegii": {
+          "next": 3,
+          "risk": "Critic"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "question": "Ce faceți când primiți un email suspect?",
+      "law_article": "Art. 16 - Protecția împotriva atacurilor",
+      "type": "single_choice",
+      "answers": {
+        "Șterg imediat emailul": {
+          "next": 4,
+          "risk": "Scăzut"
+        },
+        "Raportez la echipa IT": {
+          "next": 4,
+          "risk": "Scăzut"
+        },
+        "Verific linkurile înainte de a face click": {
+          "next": 4,
+          "risk": "Mediu"
+        },
+        "Fac click pe linkuri din curiozitate": {
+          "next": 4,
+          "risk": "Înalt"
+        },
+        "Răspund la email pentru a verifica": {
+          "next": 4,
+          "risk": "Critic"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "question": "Cum vă conectați la rețeaua companiei?",
+      "law_article": "Art. 17 - Securitatea rețelelor",
+      "type": "single_choice",
+      "answers": {
+        "Doar prin VPN-ul companiei": {
+          "next": 5,
+          "risk": "Scăzut"
+        },
+        "Prin WiFi securizat al companiei": {
+          "next": 5,
+          "risk": "Scăzut"
+        },
+        "Prin WiFi public": {
+          "next": 5,
+          "risk": "Înalt"
+        },
+        "Prin hotspot mobil": {
+          "next": 5,
+          "risk": "Mediu"
+        },
+        "Nu știu ce înseamnă VPN": {
+          "next": 5,
+          "risk": "Înalt"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "question": "Ce informații partajați pe rețelele sociale despre munca voastră?",
+      "law_article": "Art. 18 - Protecția datelor",
+      "type": "single_choice",
+      "answers": {
+        "Nu partajez nimic despre muncă": {
+          "next": 6,
+          "risk": "Scăzut"
+        },
+        "Doar informații generale, fără detalii": {
+          "next": 6,
+          "risk": "Scăzut"
+        },
+        "Detalii despre proiecte, dar fără date sensibile": {
+          "next": 6,
+          "risk": "Mediu"
+        },
+        "Informații despre clienți sau parteneri": {
+          "next": 6,
+          "risk": "Înalt"
+        },
+        "Orice găsesc interesant despre companie": {
+          "next": 6,
+          "risk": "Critic"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "question": "Cum gestionați dispozitivele de lucru?",
+      "law_article": "Art. 19 - Securitatea dispozitivelor",
+      "type": "multiple_choice",
+      "options": [
+        "Închid laptopul când plec de la birou",
+        "Activez blocarea automată a ecranului",
+        "Nu las dispozitivele neatendate",
+        "Folosesc doar software aprobat de IT",
+        "Actualizez regulat software-ul",
+        "Nu știu ce înseamnă acestea"
+      ],
+      "answers": {
+        "Continue": {
+          "next": 7
+        }
+      }
+    },
+    {
+      "id": 7,
+      "question": "Ce faceți când observați o activitate suspectă pe computer?",
+      "law_article": "Art. 20 - Monitorizarea și raportarea",
+      "type": "single_choice",
+      "answers": {
+        "Raportez imediat la echipa IT": {
+          "next": 8,
+          "risk": "Scăzut"
+        },
+        "Încerc să rezolv singur problema": {
+          "next": 8,
+          "risk": "Mediu"
+        },
+        "Închid computerul și îl pornesc din nou": {
+          "next": 8,
+          "risk": "Mediu"
+        },
+        "Ignor problema, poate se rezolvă singură": {
+          "next": 8,
+          "risk": "Înalt"
+        },
+        "Nu știu ce înseamnă activitate suspectă": {
+          "next": 8,
+          "risk": "Înalt"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "question": "Cât de des faceți backup la datele importante?",
+      "law_article": "Art. 21 - Backup și recuperarea datelor",
+      "type": "single_choice",
+      "answers": {
+        "Zilnic, automat": {
+          "next": 9,
+          "risk": "Scăzut"
+        },
+        "Săptămânal": {
+          "next": 9,
+          "risk": "Scăzut"
+        },
+        "Lunar": {
+          "next": 9,
+          "risk": "Mediu"
+        },
+        "Când îmi amintesc": {
+          "next": 9,
+          "risk": "Înalt"
+        },
+        "Nu fac backup": {
+          "next": 9,
+          "risk": "Critic"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "question": "Cum gestionați accesul la fișierele sensibile?",
+      "law_article": "Art. 22 - Controlul accesului",
+      "type": "single_choice",
+      "answers": {
+        "Doar prin sistemele securizate ale companiei": {
+          "next": 10,
+          "risk": "Scăzut"
+        },
+        "Le trimit prin email când e necesar": {
+          "next": 10,
+          "risk": "Mediu"
+        },
+        "Le salvez pe cloud personal": {
+          "next": 10,
+          "risk": "Înalt"
+        },
+        "Le copiez pe USB-uri personale": {
+          "next": 10,
+          "risk": "Înalt"
+        },
+        "Nu știu ce sunt fișierele sensibile": {
+          "next": 10,
+          "risk": "Mediu"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "question": "Cât de des participați la training-uri de securitate cibernetică?",
+      "law_article": "Art. 23 - Formarea personalului",
+      "type": "single_choice",
+      "answers": {
+        "La fiecare 3 luni": {
+          "end": "CONFORM - Excelent",
+          "risk": "Scăzut"
+        },
+        "Anual": {
+          "end": "CONFORM - Bun",
+          "risk": "Scăzut"
+        },
+        "Când este obligatoriu": {
+          "end": "PARȚIAL CONFORM - Mediu",
+          "risk": "Mediu"
+        },
+        "Rar sau niciodată": {
+          "end": "NECONFORM - Slab",
+          "risk": "Înalt"
+        },
+        "Nu știu că există astfel de training-uri": {
+          "end": "NECONFORM - Critic",
+          "risk": "Critic"
+        }
+      }
+    }
+  ]
+}

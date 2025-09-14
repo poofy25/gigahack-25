@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --blue-400: rgba(96, 165, 250, 1);
+  --body-font-family: "Inter", Helvetica;
+  --body-font-size: 14px;
+  --body-font-style: normal;
+  --body-font-weight: 400;
+  --body-letter-spacing: 0px;
+  --body-line-height: 24px;
+  --body-medium-font-family: "Inter", Helvetica;
+  --body-medium-font-size: 14px;
+  --body-medium-font-style: normal;
+  --body-medium-font-weight: 500;
+  --body-medium-letter-spacing: 0px;
+  --body-medium-line-height: 24px;
+  --detail-font-family: "Inter", Helvetica;
+  --detail-font-size: 12px;
+  --detail-font-style: normal;
+  --detail-font-weight: 500;
+  --detail-letter-spacing: 0px;
+  --detail-line-height: 20px;
+  --h-2-font-family: "Inter", Helvetica;
+  --h-2-font-size: 30px;
+  --h-2-font-style: normal;
+  --h-2-font-weight: 600;
+  --h-2-letter-spacing: -0.22499999999999998px;
+  --h-2-line-height: 36px;
+  --large-font-family: "Inter", Helvetica;
+  --large-font-size: 18px;
+  --large-font-style: normal;
+  --large-font-weight: 600;
+  --large-letter-spacing: 0px;
+  --large-line-height: 28px;
+  --lead-font-family: "Inter", Helvetica;
+  --lead-font-size: 20px;
+  --lead-font-style: normal;
+  --lead-font-weight: 400;
+  --lead-letter-spacing: 0px;
+  --lead-line-height: 28px;
+  --orange-500: rgba(249, 115, 22, 1);
+  --p-font-family: "Inter", Helvetica;
+  --p-font-size: 16px;
+  --p-font-style: normal;
+  --p-font-weight: 400;
+  --p-letter-spacing: 0px;
+  --p-line-height: 28px;
+  --p-ui-font-family: "Inter", Helvetica;
+  --p-ui-font-size: 16px;
+  --p-ui-font-style: normal;
+  --p-ui-font-weight: 400;
+  --p-ui-letter-spacing: 0px;
+  --p-ui-line-height: 24px;
+  --p-ui-medium-font-family: "Inter", Helvetica;
+  --p-ui-medium-font-size: 16px;
+  --p-ui-medium-font-style: normal;
+  --p-ui-medium-font-weight: 500;
+  --p-ui-medium-letter-spacing: 0px;
+  --p-ui-medium-line-height: 24px;
+  --red-300: rgba(252, 165, 165, 1);
+  --red-500: rgba(239, 68, 68, 1);
+  --shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+  --sky-500: rgba(14, 165, 233, 1);
+  --slate-900: rgba(15, 23, 42, 1);
+  --small-font-family: "Inter", Helvetica;
+  --small-font-size: 14px;
+  --small-font-style: normal;
+  --small-font-weight: 500;
+  --small-letter-spacing: 0px;
+  --small-line-height: 14px;
+  --subtle-font-family: "Inter", Helvetica;
+  --subtle-font-size: 14px;
+  --subtle-font-style: normal;
+  --subtle-font-weight: 400;
+  --subtle-letter-spacing: 0px;
+  --subtle-line-height: 20px;
+  --yellow-500: rgba(234, 179, 8, 1);
+  --zinc-100: rgba(244, 244, 245, 1);
+  --zinc-200: rgba(228, 228, 231, 1);
+  --zinc-300: rgba(212, 212, 216, 1);
+  --zinc-400: rgba(161, 161, 170, 1);
+  --zinc-50: rgba(250, 250, 250, 1);
+  --zinc-600: rgba(82, 82, 91, 1);
+  --zinc-700: rgba(63, 63, 70, 1);
+  --zinc-800: rgba(39, 39, 42, 1);
+  --zinc-900: rgba(24, 24, 27, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+}

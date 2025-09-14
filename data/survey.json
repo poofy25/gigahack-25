@@ -1,0 +1,1191 @@
+{
+  "survey": [
+    {
+      "id": 1,
+      "question": "Ce tip de prezență online are afacerea dvs.?",
+      "law_article": "Art. 4 Legea 48/2023",
+      "type": "multiple_choice",
+      "options": ["Website", "Social Media", "Aplicație", "Toate de mai sus"],
+      "answers": {
+        "Website": { "next": 112 },
+        "Aplicație": { "next": 2 },
+        "Toate de mai sus": { "next": 2 },
+        "Social Media": { "next": 109 }
+      }
+    },
+    {
+      "id": 2,
+      "question": "Este desemnată o persoană responsabilă pentru securitatea cibernetică în organizația dvs.?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 3 },
+        "Nu": { "risk": "Critic", "next": 4 },
+        "Nu știu": { "risk": "Înalt", "next": 3 }
+      }
+    },
+    {
+      "id": 3,
+      "question": "Persoana responsabilă are calificările și autoritatea necesară pentru implementarea măsurilor de securitate?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 5 },
+        "Nu": { "risk": "Înalt", "next": 4 },
+        "Nu știu": { "risk": "Mediu", "next": 5 }
+      }
+    },
+    {
+      "id": 4,
+      "question": "Aveți identificate toate calculatoarele, serverele și programele importante care vă permit să vă desfășurați activitatea?",
+      "law_article": "Art. 4 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 6 },
+        "Nu": { "risk": "Înalt", "next": 7 },
+        "Nu știu": { "risk": "Mediu", "next": 6 }
+      }
+    },
+    {
+      "id": 5,
+      "question": "Responsabilul de securitate raportează direct conducerii executive?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 4 },
+        "Nu": { "risk": "Mediu", "next": 4 },
+        "Nu știu": { "risk": "Scăzut", "next": 4 }
+      }
+    },
+    {
+      "id": 6,
+      "question": "Ați verificat ce probleme de securitate ar putea avea calculatoarele și programele dvs.?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 8 },
+        "Nu": { "risk": "Înalt", "next": 9 },
+        "Nu știu": { "risk": "Mediu", "next": 8 }
+      }
+    },
+    {
+      "id": 7,
+      "question": "Aveți o listă scrisă cu toate calculatoarele, programele și echipamentele IT pe care le folosiți?",
+      "law_article": "Art. 4 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 6 },
+        "Nu": { "risk": "Critic", "next": 10 },
+        "Nu știu": { "risk": "Înalt", "next": 6 }
+      }
+    },
+    {
+      "id": 8,
+      "question": "Verificarea problemelor de securitate a fost făcută în ultimele 12 luni?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 11 },
+        "Nu": { "risk": "Mediu", "next": 9 },
+        "Recent actualizată": { "next": 12 }
+      }
+    },
+    {
+      "id": 9,
+      "question": "Aveți măsuri de protecție pentru calculatoarele și rețeaua dvs. (cum ar fi firewall, antivirus, parole puternice)?",
+      "law_article": "HG 201/2017, Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 13 },
+        "Nu": { "risk": "Critic", "next": 10 },
+        "Nu știu": { "risk": "Înalt", "next": 13 }
+      }
+    },
+    {
+      "id": 10,
+      "question": "Sunteți dispuși să implementați un plan pentru îmbunătățirea securității în următoarele 30 de zile?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 14 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Risc major" },
+        "Necesită analiză": { "risk": "Critic", "next": 15 }
+      }
+    },
+    {
+      "id": 11,
+      "question": "Au fost implementate toate măsurile de securitate identificate în verificarea anterioară?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 12 },
+        "Nu": { "risk": "Înalt", "next": 9 },
+        "Nu știu": { "risk": "Mediu", "next": 12 }
+      }
+    },
+    {
+      "id": 12,
+      "question": "Urmăriți constant calculatoarele și rețeaua pentru a detecta probleme de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 16 },
+        "Nu": { "risk": "Înalt", "next": 17 },
+        "Nu știu": { "risk": "Mediu", "next": 16 }
+      }
+    },
+    {
+      "id": 13,
+      "question": "Aveți instalat programe de protecție (antivirus) și actualizați regulat programele pentru a le păstra în siguranță?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 12 },
+        "Nu": { "risk": "Înalt", "next": 18 },
+        "Nu știu": { "risk": "Mediu", "next": 12 }
+      }
+    },
+    {
+      "id": 14,
+      "question": "Aveți bani alocați pentru îmbunătățirea securității?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 19 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Alocare resurse urgentă"
+        },
+        "În curs de aprobare": { "risk": "Înalt", "next": 19 }
+      }
+    },
+    {
+      "id": 15,
+      "question": "Ați contactat un specialist în securitate IT pentru ajutor?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 19 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Recomandare: Consultanță specializată urgentă"
+        },
+        "În proces": { "risk": "Înalt", "next": 19 }
+      }
+    },
+    {
+      "id": 16,
+      "question": "Aveți o procedură scrisă pentru raportarea problemelor de securitate către autorități?",
+      "law_article": "HG Sept 2025, Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 20 },
+        "Nu": { "risk": "Critic", "next": 21 },
+        "Nu știu": { "risk": "Înalt", "next": 20 }
+      }
+    },
+    {
+      "id": 17,
+      "question": "Aveți cel puțin o înregistrare de bază pentru evenimentele de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 16 },
+        "Nu": { "risk": "Critic", "next": 22 },
+        "Nu știu": { "risk": "Înalt", "next": 16 }
+      }
+    },
+    {
+      "id": 18,
+      "question": "Planificați să implementați aceste măsuri de securitate în următoarele 30 de zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 12 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Măsuri de bază lipsă" },
+        "Parțial": { "risk": "Înalt", "next": 12 }
+      }
+    },
+    {
+      "id": 19,
+      "question": "Aveți definit un calendar pentru implementarea măsurilor de securitate?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 23 },
+        "Nu": { "risk": "Înalt", "next": 23 },
+        "În dezvoltare": { "risk": "Mediu", "next": 23 }
+      }
+    },
+    {
+      "id": 20,
+      "question": "Raportați problemele grave de securitate în termen de 24 de ore către autoritățile competente?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 24 },
+        "Nu": { "risk": "Critic", "next": 25 },
+        "Nu știu": { "risk": "Înalt", "next": 24 }
+      }
+    },
+    {
+      "id": 21,
+      "question": "Știți cum să contactați autoritățile competente pentru probleme de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 20 },
+        "Nu": { "risk": "Critic", "next": 26 },
+        "Nu știu": { "risk": "Înalt", "next": 26 }
+      }
+    },
+    {
+      "id": 22,
+      "question": "Sunteți dispuși să implementați urmărirea de bază a securității imediat?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 16 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Monitorizare obligatorie"
+        },
+        "Necesită evaluare": { "risk": "Înalt", "next": 16 }
+      }
+    },
+    {
+      "id": 23,
+      "question": "Faceți copii de rezervă regulate ale datelor importante?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 27 },
+        "Nu": { "risk": "Înalt", "next": 28 },
+        "Nu știu": { "risk": "Mediu", "next": 27 }
+      }
+    },
+    {
+      "id": 24,
+      "question": "Pentru a accesa datele importante, trebuie să introduceți mai multe coduri de securitate (parolă + cod trimis pe telefon)?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 29 },
+        "Nu": { "risk": "Înalt", "next": 30 },
+        "Nu știu": { "risk": "Mediu", "next": 29 }
+      }
+    },
+    {
+      "id": 25,
+      "question": "Ați avut probleme de securitate neraportate în ultimele 12 luni?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Critic", "next": 26 },
+        "Nu": { "next": 24 },
+        "Nu sunt sigur": { "risk": "Înalt", "next": 26 }
+      }
+    },
+    {
+      "id": 26,
+      "question": "Veți implementa procedura de raportare în următoarele 7 zile?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Înalt", "next": 24 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Notificare obligatorie" },
+        "Necesită asistență": { "risk": "Critic", "next": 31 }
+      }
+    },
+    {
+      "id": 27,
+      "question": "Testați periodic dacă puteți recupera datele din copiile de rezervă?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 32 },
+        "Nu": { "risk": "Mediu", "next": 33 },
+        "Nu știu": { "risk": "Scăzut", "next": 32 }
+      }
+    },
+    {
+      "id": 28,
+      "question": "Aveți un plan pentru implementarea copiilor de rezervă?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 27 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Backup obligatoriu" },
+        "În dezvoltare": { "risk": "Înalt", "next": 27 }
+      }
+    },
+    {
+      "id": 29,
+      "question": "Efectuați instruiri regulate ale personalului privind securitatea IT?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 34 },
+        "Nu": { "risk": "Înalt", "next": 35 },
+        "Nu știu": { "risk": "Mediu", "next": 34 }
+      }
+    },
+    {
+      "id": 30,
+      "question": "Aveți cel puțin parole puternice și reguli de schimbare regulată a acestora?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 29 },
+        "Nu": { "risk": "Critic", "next": 36 },
+        "Nu știu": { "risk": "Înalt", "next": 29 }
+      }
+    },
+    {
+      "id": 31,
+      "question": "Cooperați cu autoritățile competente pentru securitate?",
+      "law_article": "Art. 7, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 24 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - Cooperare obligatorie" },
+        "Inițiem cooperarea": { "risk": "Mediu", "next": 24 }
+      }
+    },
+    {
+      "id": 32,
+      "question": "Aveți un plan de răspuns la problemele de securitate și de recuperare după dezastre?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 37 },
+        "Nu": { "risk": "Înalt", "next": 38 },
+        "Nu știu": { "risk": "Mediu", "next": 37 }
+      }
+    },
+    {
+      "id": 33,
+      "question": "Copiile de rezervă sunt stocate în locații separate fizic?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 32 },
+        "Nu": { "risk": "Mediu", "next": 32 },
+        "Nu știu": { "risk": "Scăzut", "next": 32 }
+      }
+    },
+    {
+      "id": 34,
+      "question": "Personalul dvs. poate identifica și raporta emailurile suspecte (phishing)?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 39 },
+        "Nu": { "risk": "Mediu", "next": 40 },
+        "Nu știu": { "risk": "Scăzut", "next": 39 }
+      }
+    },
+    {
+      "id": 35,
+      "question": "Aveți planificat un program de instruire pentru următorul trimestru?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 34 },
+        "Nu": { "risk": "Înalt", "next": 41 },
+        "În dezvoltare": { "risk": "Mediu", "next": 34 }
+      }
+    },
+    {
+      "id": 36,
+      "question": "Veți implementa reguli pentru parole în următoarele 7 zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "risk": "Înalt", "next": 29 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Securitate de bază lipsă"
+        },
+        "Necesită timp": { "risk": "Critic", "next": 29 }
+      }
+    },
+    {
+      "id": 37,
+      "question": "Efectuați exerciții simulate de răspuns la probleme de securitate cel puțin anual?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 42 },
+        "Nu": { "risk": "Mediu", "next": 43 },
+        "Nu știu": { "risk": "Scăzut", "next": 42 }
+      }
+    },
+    {
+      "id": 38,
+      "question": "Aveți cel puțin o procedură de bază pentru probleme majore de securitate?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 37 },
+        "Nu": { "risk": "Critic", "next": 44 },
+        "Nu știu": { "risk": "Înalt", "next": 37 }
+      }
+    },
+    {
+      "id": 39,
+      "question": "Actualizați programele pentru securitate în termen de 30 de zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 45 },
+        "Nu": { "risk": "Înalt", "next": 46 },
+        "Nu știu": { "risk": "Mediu", "next": 45 }
+      }
+    },
+    {
+      "id": 40,
+      "question": "Efectuați teste simulate cu emailuri suspecte (phishing)?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 39 },
+        "Nu": { "risk": "Mediu", "next": 39 },
+        "Nu știu": { "risk": "Scăzut", "next": 39 }
+      }
+    },
+    {
+      "id": 41,
+      "question": "Există materiale de instruire disponibile pentru personal?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 34 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Instruire personal necesară"
+        },
+        "În pregătire": { "risk": "Mediu", "next": 34 }
+      }
+    },
+    {
+      "id": 42,
+      "question": "Criptați datele sensibile atât când le trimiteți cât și când le stocați?",
+      "law_article": "HG 201/2017, Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 47 },
+        "Nu": { "risk": "Înalt", "next": 48 },
+        "Nu știu": { "risk": "Mediu", "next": 47 }
+      }
+    },
+    {
+      "id": 43,
+      "question": "Planul de răspuns include roluri și responsabilități clare?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 42 },
+        "Nu": { "risk": "Mediu", "next": 42 },
+        "Necesită actualizare": { "risk": "Scăzut", "next": 42 }
+      }
+    },
+    {
+      "id": 44,
+      "question": "Sunteți dispuși să dezvoltați un plan de răspuns în următoarele 14 zile?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Înalt", "next": 37 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Plan răspuns obligatoriu"
+        },
+        "Cu asistență": { "risk": "Înalt", "next": 37 }
+      }
+    },
+    {
+      "id": 45,
+      "question": "Aveți programe care vă avertizează când cineva încearcă să intre neautorizat în sistemele dvs.?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 49 },
+        "Nu": { "risk": "Mediu", "next": 50 },
+        "Nu știu": { "risk": "Scăzut", "next": 49 }
+      }
+    },
+    {
+      "id": 46,
+      "question": "Aveți un proces de gestionare a actualizărilor de securitate?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 45 },
+        "Nu": { "risk": "Critic", "next": 51 },
+        "În dezvoltare": { "risk": "Înalt", "next": 45 }
+      }
+    },
+    {
+      "id": 47,
+      "question": "Verificați regulat (cel puțin o dată la 3 luni) dacă programele dvs. au probleme de securitate care trebuie reparate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 52 },
+        "Nu": { "risk": "Mediu", "next": 53 },
+        "Nu știu": { "risk": "Scăzut", "next": 52 }
+      }
+    },
+    {
+      "id": 48,
+      "question": "Aveți certificate de securitate (SSL) pentru toate serviciile web?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 47 },
+        "Nu": { "risk": "Înalt", "next": 54 },
+        "Nu știu": { "risk": "Mediu", "next": 47 }
+      }
+    },
+    {
+      "id": 49,
+      "question": "Aveți verificat anual dacă cineva ar putea să intre neautorizat în sistemele dvs. (prin teste de securitate)?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 55 },
+        "Nu": { "risk": "Mediu", "next": 56 },
+        "Nu știu": { "risk": "Scăzut", "next": 55 }
+      }
+    },
+    {
+      "id": 50,
+      "question": "Aveți cel puțin un firewall (program de protecție) configurat corespunzător?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 49 },
+        "Nu": { "risk": "Înalt", "next": 57 },
+        "Nu știu": { "risk": "Mediu", "next": 49 }
+      }
+    },
+    {
+      "id": 51,
+      "question": "Actualizările importante de securitate sunt aplicate în maxim 7 zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 45 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Actualizări critice urgente"
+        },
+        "Uneori": { "risk": "Înalt", "next": 45 }
+      }
+    },
+    {
+      "id": 52,
+      "question": "Aveți implementat un proces de gestionare a problemelor de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 58 },
+        "Nu": { "risk": "Înalt", "next": 59 },
+        "Nu știu": { "risk": "Mediu", "next": 58 }
+      }
+    },
+    {
+      "id": 53,
+      "question": "Folosiți cel puțin programe automate pentru verificarea problemelor de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 52 },
+        "Nu": { "risk": "Mediu", "next": 60 },
+        "Nu știu": { "risk": "Scăzut", "next": 52 }
+      }
+    },
+    {
+      "id": 54,
+      "question": "Veți implementa HTTPS (securitate web) pentru toate serviciile în 30 de zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 47 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Criptare obligatorie" },
+        "Nu știu": { "risk": "Înalt", "next": 47 }
+      }
+    },
+    {
+      "id": 55,
+      "question": "Controlați și monitorizați accesul fizic la calculatoarele și serverele dvs.?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 61 },
+        "Nu": { "risk": "Mediu", "next": 62 },
+        "Nu știu": { "risk": "Scăzut", "next": 61 }
+      }
+    },
+    {
+      "id": 56,
+      "question": "Aveți planificat un test de securitate pentru acest an?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 55 },
+        "Nu": { "risk": "Mediu", "next": 55 },
+        "În bugetare": { "risk": "Scăzut", "next": 55 }
+      }
+    },
+    {
+      "id": 57,
+      "question": "Sistemele importante sunt izolate în rețele separate?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 49 },
+        "Nu": { "risk": "Înalt", "next": 63 },
+        "Nu știu": { "risk": "Mediu", "next": 49 }
+      }
+    },
+    {
+      "id": 58,
+      "question": "Angajații au acces doar la informațiile de care au nevoie pentru munca lor, nu la toate datele companiei?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 64 },
+        "Nu": { "risk": "Înalt", "next": 65 },
+        "Nu știu": { "risk": "Mediu", "next": 64 }
+      }
+    },
+    {
+      "id": 59,
+      "question": "Remediați problemele critice de securitate în maxim 7 zile?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 58 },
+        "Nu": { "risk": "Înalt", "next": 66 },
+        "Nu știu": { "risk": "Mediu", "next": 58 }
+      }
+    },
+    {
+      "id": 60,
+      "question": "Veți implementa verificări de probleme de securitate în următorul trimestru?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 52 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Evaluare vulnerabilități necesară"
+        },
+        "În evaluare": { "risk": "Mediu", "next": 52 }
+      }
+    },
+    {
+      "id": 61,
+      "question": "Monitorizați și înregistrați toate accesările la sistemele importante?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 67 },
+        "Nu": { "risk": "Înalt", "next": 68 },
+        "Nu știu": { "risk": "Mediu", "next": 67 }
+      }
+    },
+    {
+      "id": 62,
+      "question": "Serverele importante sunt în spații securizate?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 61 },
+        "Nu": { "risk": "Înalt", "next": 69 },
+        "Nu știu": { "risk": "Mediu", "next": 61 }
+      }
+    },
+    {
+      "id": 63,
+      "question": "Veți implementa separarea rețelei în următoarele 60 de zile?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 49 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Segmentare rețea recomandată"
+        },
+        "În analiză": { "risk": "Mediu", "next": 49 }
+      }
+    },
+    {
+      "id": 64,
+      "question": "Revizuiți periodic drepturile de acces ale angajaților?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 70 },
+        "Nu": { "risk": "Mediu", "next": 71 },
+        "Nu știu": { "risk": "Scăzut", "next": 70 }
+      }
+    },
+    {
+      "id": 65,
+      "question": "Aveți cel puțin grupuri de angajați cu drepturi diferențiate?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 64 },
+        "Nu": { "risk": "Critic", "next": 72 },
+        "Nu știu": { "risk": "Înalt", "next": 64 }
+      }
+    },
+    {
+      "id": 66,
+      "question": "Aveți un termen definit pentru remedierea problemelor de securitate?",
+      "law_article": "Art. 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 58 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Proces remediere necesar"
+        },
+        "În dezvoltare": { "risk": "Mediu", "next": 58 }
+      }
+    },
+    {
+      "id": 67,
+      "question": "Înregistrările de activitate sunt păstrate cel puțin 6 luni?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 73 },
+        "Nu": { "risk": "Mediu", "next": 74 },
+        "Nu știu": { "risk": "Scăzut", "next": 73 }
+      }
+    },
+    {
+      "id": 68,
+      "question": "Aveți cel puțin o înregistrare pentru modificările administrative?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 67 },
+        "Nu": { "risk": "Înalt", "next": 75 },
+        "Nu știu": { "risk": "Mediu", "next": 67 }
+      }
+    },
+    {
+      "id": 69,
+      "question": "Veți securiza fizic serverele în următoarele 30 de zile?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 61 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Securitate fizică obligatorie"
+        },
+        "Necesită buget": { "risk": "Înalt", "next": 61 }
+      }
+    },
+    {
+      "id": 70,
+      "question": "Aveți implementat un proces de gestionare a furnizorilor externi?",
+      "law_article": "Art. 4, 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 76 },
+        "Nu": { "risk": "Mediu", "next": 77 },
+        "Nu știu": { "risk": "Scăzut", "next": 76 }
+      }
+    },
+    {
+      "id": 71,
+      "question": "Efectuați revizuiri cel puțin anual?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 70 },
+        "Nu": { "risk": "Mediu", "next": 78 },
+        "Planificat": { "risk": "Scăzut", "next": 70 }
+      }
+    },
+    {
+      "id": 72,
+      "question": "Veți implementa controlul accesului bazat pe roluri în următoarele 14 zile?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "risk": "Înalt", "next": 64 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Control acces obligatoriu"
+        },
+        "Cu asistență": { "risk": "Înalt", "next": 64 }
+      }
+    },
+    {
+      "id": 73,
+      "question": "Revizuiți și actualizați regulile de securitate cel puțin anual?",
+      "law_article": "Art. 5 Legea 48/2023, HG Sept 2025",
+      "answers": {
+        "Da": { "next": 79 },
+        "Nu": { "risk": "Mediu", "next": 80 },
+        "Nu știu": { "risk": "Scăzut", "next": 79 }
+      }
+    },
+    {
+      "id": 74,
+      "question": "Aveți capacitate de stocare pentru 6 luni de înregistrări?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 73 },
+        "Nu": { "risk": "Mediu", "next": 81 },
+        "Nu știu": { "risk": "Scăzut", "next": 73 }
+      }
+    },
+    {
+      "id": 75,
+      "question": "Veți implementa înregistrarea activității în următoarele 7 zile?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 67 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - Audit obligatoriu" },
+        "Nu știu": { "risk": "Mediu", "next": 67 }
+      }
+    },
+    {
+      "id": 76,
+      "question": "Verificați dacă furnizorii respectă cerințele de securitate?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 82 },
+        "Nu": { "risk": "Mediu", "next": 83 },
+        "Nu știu": { "risk": "Scăzut", "next": 82 }
+      }
+    },
+    {
+      "id": 77,
+      "question": "Aveți cel puțin o listă a furnizorilor importanți?",
+      "law_article": "Art. 4, 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 76 },
+        "Nu": { "risk": "Mediu", "next": 84 },
+        "Nu știu": { "risk": "Scăzut", "next": 76 }
+      }
+    },
+    {
+      "id": 78,
+      "question": "Veți implementa un proces de revizuire periodică?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 70 },
+        "Nu": {
+          "risk": "Mediu",
+          "end": "Parțial conform - Revizuiri necesare"
+        },
+        "În planificare": { "risk": "Scăzut", "next": 70 }
+      }
+    },
+    {
+      "id": 79,
+      "question": "Regulile sunt aliniate cu cerințele legale actuale?",
+      "law_article": "Art. 5 Legea 48/2023, HG Sept 2025",
+      "answers": {
+        "Da": { "next": 85 },
+        "Nu": { "risk": "Înalt", "next": 86 },
+        "Nu știu": { "risk": "Mediu", "next": 85 }
+      }
+    },
+    {
+      "id": 80,
+      "question": "Ultima revizuire a fost în ultimele 18 luni?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 79 },
+        "Nu": { "risk": "Înalt", "next": 87 },
+        "Nu știu": { "risk": "Mediu", "next": 79 }
+      }
+    },
+    {
+      "id": 81,
+      "question": "Veți extinde capacitatea de stocare în următoarele 30 de zile?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 73 },
+        "Nu": {
+          "risk": "Mediu",
+          "end": "Parțial conform - Stocare jurnale insuficientă"
+        },
+        "În evaluare": { "risk": "Scăzut", "next": 73 }
+      }
+    },
+    {
+      "id": 82,
+      "question": "Aveți proceduri pentru gestionarea accesului furnizorilor?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 88 },
+        "Nu": { "risk": "Înalt", "next": 89 },
+        "Nu știu": { "risk": "Mediu", "next": 88 }
+      }
+    },
+    {
+      "id": 83,
+      "question": "Furnizorii importanți au clauze de securitate în contracte?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 82 },
+        "Nu": { "risk": "Înalt", "next": 90 },
+        "Nu știu": { "risk": "Mediu", "next": 82 }
+      }
+    },
+    {
+      "id": 84,
+      "question": "Veți documenta furnizorii importanți în următoarele 14 zile?",
+      "law_article": "Art. 4, 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 76 },
+        "Nu": {
+          "risk": "Mediu",
+          "end": "Parțial conform - Gestionare furnizori necesară"
+        },
+        "În proces": { "risk": "Scăzut", "next": 76 }
+      }
+    },
+    {
+      "id": 85,
+      "question": "Cooperați activ cu autoritățile competente pentru securitate?",
+      "law_article": "Art. 7, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 91 },
+        "Nu": { "risk": "Înalt", "next": 92 },
+        "Nu știu": { "risk": "Mediu", "next": 91 }
+      }
+    },
+    {
+      "id": 86,
+      "question": "Veți actualiza regulile conform HG Sept 2025?",
+      "law_article": "HG Sept 2025",
+      "answers": {
+        "Da": { "next": 85 },
+        "Nu": {
+          "risk": "Critic",
+          "end": "Neconform - Actualizare urgentă necesară"
+        },
+        "În următoarele 30 zile": { "risk": "Înalt", "next": 85 }
+      }
+    },
+    {
+      "id": 87,
+      "question": "Veți efectua o revizuire completă în următoarea lună?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 79 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - Politici neactualizate" },
+        "Necesită resurse": { "risk": "Înalt", "next": 79 }
+      }
+    },
+    {
+      "id": 88,
+      "question": "Accesul furnizorilor este monitorizat și limitat în timp?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 93 },
+        "Nu": { "risk": "Mediu", "next": 94 },
+        "Nu știu": { "risk": "Scăzut", "next": 93 }
+      }
+    },
+    {
+      "id": 89,
+      "question": "Aveți cel puțin acorduri de confidențialitate cu furnizorii importanți?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 88 },
+        "Nu": { "risk": "Înalt", "next": 95 },
+        "Nu știu": { "risk": "Mediu", "next": 88 }
+      }
+    },
+    {
+      "id": 90,
+      "question": "Veți adăuga clauze de securitate în următoarele reînnoiri?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 82 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - Securitate furnizori" },
+        "În negociere": { "risk": "Mediu", "next": 82 }
+      }
+    },
+    {
+      "id": 91,
+      "question": "Participați la exercițiile naționale de securitate IT?",
+      "law_article": "Art. 7, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 96 },
+        "Nu": { "risk": "Mediu", "next": 97 },
+        "Nu știu": { "risk": "Scăzut", "next": 96 }
+      }
+    },
+    {
+      "id": 92,
+      "question": "Veți iniția cooperarea cu autoritățile competente în următoarele 7 zile?",
+      "law_article": "Art. 7, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 91 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Cooperare ASC obligatorie"
+        },
+        "Necesită aprobare": { "risk": "Mediu", "next": 91 }
+      }
+    },
+    {
+      "id": 93,
+      "question": "Efectuați audituri de conformitate pentru sistemele importante?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 98 },
+        "Nu": { "risk": "Mediu", "next": 99 },
+        "Nu știu": { "risk": "Scăzut", "next": 98 }
+      }
+    },
+    {
+      "id": 94,
+      "question": "Veți implementa monitorizarea accesului furnizorilor?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 93 },
+        "Nu": {
+          "risk": "Mediu",
+          "end": "Parțial conform - Monitorizare furnizori"
+        },
+        "În evaluare": { "risk": "Scăzut", "next": 93 }
+      }
+    },
+    {
+      "id": 95,
+      "question": "Veți implementa acorduri de confidențialitate imediat?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 88 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - NDA-uri necesare" },
+        "În pregătire": { "risk": "Mediu", "next": 88 }
+      }
+    },
+    {
+      "id": 96,
+      "question": "Aveți un responsabil de securitate IT care raportează conducerii?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 100 },
+        "Nu": { "risk": "Mediu", "next": 101 },
+        "Nu știu": { "risk": "Scăzut", "next": 100 }
+      }
+    },
+    {
+      "id": 97,
+      "question": "Veți participa la următorul exercițiu național?",
+      "law_article": "Art. 7, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 96 },
+        "Nu": {
+          "risk": "Mediu",
+          "end": "Parțial conform - Participare recomandată"
+        },
+        "Dacă suntem invitați": { "next": 96 }
+      }
+    },
+    {
+      "id": 98,
+      "question": "Auditurile sunt efectuate de terți independenți?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 102 },
+        "Nu": { "risk": "Scăzut", "next": 102 },
+        "Nu știu": { "next": 102 }
+      }
+    },
+    {
+      "id": 99,
+      "question": "Aveți planificat un audit pentru acest an?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 98 },
+        "Nu": { "risk": "Mediu", "next": 103 },
+        "În bugetare": { "risk": "Scăzut", "next": 98 }
+      }
+    },
+    {
+      "id": 100,
+      "question": "Aveți un buget dedicat pentru securitate IT?",
+      "law_article": "Art. 5, 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 104 },
+        "Nu": { "risk": "Înalt", "next": 105 },
+        "Nu știu": { "risk": "Mediu", "next": 104 }
+      }
+    },
+    {
+      "id": 101,
+      "question": "Responsabilul actual are pregătire în securitate IT?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 100 },
+        "Nu": { "risk": "Înalt", "next": 106 },
+        "Nu știu": { "risk": "Mediu", "next": 100 }
+      }
+    },
+    {
+      "id": 102,
+      "question": "Respectați toate cerințele minime stabilite pentru sectorul dvs.?",
+      "law_article": "HG Sept 2025, Art. 4-5 Legea 48/2023",
+      "answers": {
+        "Da": { "end": "CONFORM - Felicitări!" },
+        "Nu": { "risk": "Critic", "end": "NECONFORM - Acțiune urgentă" },
+        "Parțial": {
+          "risk": "Înalt",
+          "end": "PARȚIAL CONFORM - Îmbunătățiri necesare"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "question": "Efectuați cel puțin auto-evaluări interne?",
+      "law_article": "Art. 5, 8 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 98 },
+        "Nu": { "risk": "Înalt", "end": "Neconform - Audit necesar" },
+        "Ocazional": { "risk": "Mediu", "next": 98 }
+      }
+    },
+    {
+      "id": 104,
+      "question": "Bugetul acoperă toate cerințele de conformitate?",
+      "law_article": "Art. 5, 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 102 },
+        "Nu": { "risk": "Mediu", "next": 107 },
+        "Nu știu": { "risk": "Scăzut", "next": 102 }
+      }
+    },
+    {
+      "id": 105,
+      "question": "Veți aloca buget pentru securitate în următorul ciclu?",
+      "law_article": "Art. 5, 7 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 104 },
+        "Nu": { "risk": "Critic", "end": "Neconform - Buget obligatoriu" },
+        "În discuție": { "risk": "Înalt", "next": 104 }
+      }
+    },
+    {
+      "id": 106,
+      "question": "Veți asigura formare pentru responsabil în 30 de zile?",
+      "law_article": "Art. 7 Legea 48/2023",
+      "answers": {
+        "Da": { "risk": "Mediu", "next": 100 },
+        "Nu": {
+          "risk": "Înalt",
+          "end": "Neconform - Personal calificat necesar"
+        },
+        "În evaluare": { "risk": "Mediu", "next": 100 }
+      }
+    },
+    {
+      "id": 107,
+      "question": "Aveți un plan de creștere a bugetului?",
+      "law_article": "Art. 5, 7 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 102 },
+        "Nu": { "risk": "Mediu", "end": "Parțial conform - Buget insuficient" },
+        "În dezvoltare": { "risk": "Scăzut", "next": 102 }
+      }
+    },
+
+    {
+      "id": 109,
+      "question": "Folosiți autentificare cu doi factori (2FA) pentru conturile de Social Media?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Da": { "next": 110 },
+        "Nu": { "risk": "Înalt", "next": 110 },
+        "Nu știu": { "risk": "Mediu", "next": 110 }
+      }
+    },
+    {
+      "id": 110,
+      "question": "Parolele conturilor Social Media sunt puternice și unice?",
+      "law_article": "HG 201/2017",
+      "answers": {
+        "Da": { "next": 111 },
+        "Nu": { "risk": "Critic", "next": 111 },
+        "Nu știu": { "risk": "Înalt", "next": 111 }
+      }
+    },
+    {
+      "id": 111,
+      "question": "Cum gestionați parolele conturilor de Social Media?",
+      "law_article": "Art. 5 Legea 48/2023",
+      "answers": {
+        "Folosim un manager de parole securizat cu acces controlat": { "end": "Conform pentru Social Media" },
+        "Parolele sunt împărtășite prin email sau mesaje nesecurizate": {
+          "risk": "Critic",
+          "end": "Neconform - Metode nesecurizate de împărtășire a parolelor"
+        },
+        "Parolele sunt împărtășite verbal sau pe hârtie": {
+          "risk": "Înalt",
+          "end": "Neconform - Gestionare nesecurizată a parolelor"
+        },
+        "Nu știu cum sunt gestionate parolele": {
+          "risk": "Mediu",
+          "end": "Necesită clarificare privind gestionarea parolelor"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "question": "Introduceți URL-ul website-ului dvs.:",
+      "law_article": "Art. 4 Legea 48/2023",
+      "type": "text_input",
+      "input_placeholder": "https://example.com",
+      "answers": {
+        "Continue": { "next": 2 }
+      }
+    }
+  ]
+}
