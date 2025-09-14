@@ -50,7 +50,7 @@ export default function IncidentReportPage() {
           --chat--color-secondary: #22c55e; /* green-500 */
           --chat--color-secondary-shade-50: #16a34a; /* green-600 */
           --chat--color-white: #ffffff;
-          --chat--color-light: #f4f4f5; /* zinc-100 */
+          --chat--color-light: #27272A; /* zinc-100 */
           --chat--color-light-shade-50: #e4e4e7; /* zinc-200 */
           --chat--color-light-shade-100: #a1a1aa; /* zinc-400 */
           --chat--color-medium: #71717a; /* zinc-500 */
@@ -58,6 +58,7 @@ export default function IncidentReportPage() {
           --chat--color-disabled: #52525b; /* zinc-600 */
           --chat--color-typing: #3f3f46; /* zinc-700 */
           --chat--input--text-color: #27272a; /* zinc-100 */
+          --chat--body--background:#27272A;
 
           --chat--spacing: 1rem;
           --chat--border-radius: 0.5rem; /* Match your radius */
@@ -98,6 +99,7 @@ export default function IncidentReportPage() {
           --chat--toggle--active--background: #0369a1; /* sky-700 */
           --chat--toggle--color: #ffffff;
           --chat--toggle--size: 64px;
+          --chat--border-radius: 2rem;
         }
       `}</style>
       

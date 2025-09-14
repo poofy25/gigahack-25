@@ -7,7 +7,7 @@ import { QuestionnaireCard } from '@/components/sections/QuestionnaireCard';
 export default function DashboardPage() {
   const [scanProgress, setScanProgress] = useState(0);
   const [scanComplete, setScanComplete] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(17);
+  const [timeRemaining, setTimeRemaining] = useState(8);
 
   useEffect(() => {
     // Simulate scan progress
