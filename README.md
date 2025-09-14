@@ -109,7 +109,6 @@ Aplicația oferă un flux complet de audit cibernetic, de la evaluarea inițial�
 
 ### Strategia de Deployment
 - **Build de Producție**: Next.js built-in bundling pentru optimizarea client-side și server-side
-- **Variabile de Mediu**: SUPABASE_URL și SUPABASE_ANON_KEY necesare pentru conexiunea bazei de date
 - **Hosting**: Deployment pe platforme compatibile cu Next.js (Vercel, Netlify, etc.)
 
 ## Componente Cheie
@@ -184,21 +183,10 @@ cd cyberdoc
 # Instalează dependențele
 npm install
 
-# Configurează variabilele de mediu
-cp .env.example .env.local
-# Editează .env.local cu credențialele Supabase și alte configurații
-
 # Pornește serverul de dezvoltare
 npm run dev
 ```
 
-### Variabile de Mediu
-```env
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-NEXTAUTH_SECRET=your-secret-key
-NEXTAUTH_URL=http://localhost:3000
-```
 
 ## Funcționalități de Conformitate
 
